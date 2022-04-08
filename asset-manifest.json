@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/pizza-app/static/css/main.44b9c445.css",
+    "main.js": "/pizza-app/static/js/main.0da18a7c.js",
+    "static/js/787.3d66f7fd.chunk.js": "/pizza-app/static/js/787.3d66f7fd.chunk.js",
+    "static/media/pepper.png": "/pizza-app/static/media/pepper.1564cf6e35b43856bdae.png",
+    "static/media/mushrooms.png": "/pizza-app/static/media/mushrooms.0cb2f1a18184113a90ef.png",
+    "static/media/olives.png": "/pizza-app/static/media/olives.2d8de6a8365e615c138f.png",
+    "static/media/pepperoni.png": "/pizza-app/static/media/pepperoni.faebf0f9aac3f6859cbd.png",
+    "index.html": "/pizza-app/index.html",
+    "main.44b9c445.css.map": "/pizza-app/static/css/main.44b9c445.css.map",
+    "main.0da18a7c.js.map": "/pizza-app/static/js/main.0da18a7c.js.map",
+    "787.3d66f7fd.chunk.js.map": "/pizza-app/static/js/787.3d66f7fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44b9c445.css",
+    "static/js/main.0da18a7c.js"
+  ]
+}
