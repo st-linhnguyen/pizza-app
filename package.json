@@ -2,7 +2,7 @@
   "name": "pizza-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://st-linhnguyen.github.io.pizza-app",
+  "homepage": "https://st-linhnguyen.github.io/pizza-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
