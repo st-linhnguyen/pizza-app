@@ -1,8 +1,8 @@
 {
-  "name": "FE_Lesson_1_Linh_Nguyen_D_Q",
+  "name": "pizza-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://st-linhnguyen.github.io/FE_Lesson_1_Linh_Nguyen_D_Q",
+  "homepage": "https://st-linhnguyen.github.io/pizza-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -31,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish:demo": "npm run build && gh-pages -d dist",
+    "publish:demo": "npm run build && gh-pages -d build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
