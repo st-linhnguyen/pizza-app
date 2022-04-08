@@ -1,0 +1,26 @@
+$font-body: "Poppins", sans-serif;
+
+$breakpoints: (
+  smallest: 375px,
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  large-max: 1025px,
+  large-pro: 1367px,
+  largest: 1280px,
+  super-largest: 1441px,
+  pc: 1920px
+);
+
+$color: (
+  primary: #f26b38,
+  secondary: #0b4da1,
+  "white": #ffffff,
+  "black": "#000000",
+  border: #D8DFEE,
+  "gray": #FAFAFC,
+  gray-a: #B5B6BD,
+  "green": #66bb6a,
+  danger: #A83232
+);

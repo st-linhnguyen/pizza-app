@@ -1,0 +1,27 @@
+.dialog {
+  @include flex-center-x();
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  &.dialog-center {
+    align-items: center;
+  }
+  .dialog-content {
+    @include flex-center-x();
+    @include pxRem(padding, 20);
+    @include pxRem(border-radius, 4);
+    flex-direction: column;
+    position: relative;
+    background-color: map-get($color, "white");
+    .btn-close {
+      @include pxRem(font-size, 8);
+      @include pxRem(margin-bottom, 20);
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.form {
+  .form-group {
+    @include pxRem(margin-bottom, 30);
+    position: relative;
+    .msg-error {
+      @include pxRem(font-size, 12);
+      @include pxRem(margin-top, 5);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      color: map-get($color, danger);
+      font-style: italic;
+    }
+  }
+  .form-control {
+    @include pxRem(padding, 8 12);
+    @include pxRem(border-radius, 4 !important);
+    &:focus {
+      box-shadow: none;
+      border-color: map-get($color, border);
+    }
+  }
+  .btn-submit {
+    width: 100%;
+  }
+}

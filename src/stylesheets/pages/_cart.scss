@@ -1,0 +1,65 @@
+.cart {
+  @include pxRem(padding, 0 20 20);
+  border-left: 1px solid map-get($color, border);
+  min-height: 100vh;
+  .title {
+    @include pxRem(font-size, 20);
+    @include pxRem(padding, 15 20);
+    text-align: center;
+  }
+  .ordering-list {
+    @include pxRem(margin-bottom, 50);
+    list-style: none;
+    padding: 0;
+  }
+  .ordering-item {
+    @include pxRem(margin-bottom, 25);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    .item-info {
+      max-width: calc(100% - 76px);
+    }
+    .item-name {
+      @include pxRem(font-size, 16);
+      @include pxRem(margin-bottom, 8);
+      .price {
+        @include pxRem(margin-left, 5);
+        color: map-get($color, primary);
+        font-weight: 600;
+      }
+    }
+    .item-toppings {
+      @include pxRem(font-size, 12);
+      @include flex-center-y();
+      flex-wrap: wrap;
+      color: map-get($color, gray-a);
+      span {
+        @include pxRem(border-radius, 15);
+        @include pxRem(padding, 2 8);
+        @include pxRem(margin, 0 5 5 0);
+        border: 1px solid map-get($color, border);
+      }
+    }
+    .item-quantity {
+      display: flex;
+      align-items: center;
+    }
+    .quantity {
+      @include pxRem(margin, 0 15);
+    }
+  }
+  .btn-checkout {
+    @include pxRem(padding, 12 8);
+    @include pxRem(border-radius, 10);
+    color: map-get($color, "white");
+    background-color: map-get($color, primary);
+    width: 100%;
+    font-weight: 600;
+  }
+  .txt-empty {
+    color: map-get($color, gray-a);
+    text-align: center;
+  }
+}

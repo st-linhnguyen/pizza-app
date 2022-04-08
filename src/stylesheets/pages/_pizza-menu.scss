@@ -1,0 +1,80 @@
+.pizza-menu-wrapper {
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  .pizza-item {
+    @include pxRem(margin-bottom, 10);
+  }
+  .card-img {
+    @include pxRem(height, 200);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-title {
+    @include pxRem(font-size, 18);
+  }
+  .card-text {
+    @include pxRem(font-size, 14);
+    .desc {
+      @include ellipsis-special(2);
+    }
+    .pizza-sizes,
+    .size-list {
+      @include flex-center-y();
+      .label {
+        @include pxRem(margin-right, 5);
+      }
+    }
+    .pizza-sizes {
+      @include pxRem(margin-bottom, 20);
+    }
+    .size-item {
+      @include flex-centered();
+      @include pxRem(width, 50);
+      @include pxRem(height, 20);
+      @include pxRem(border-radius, 10);
+      @include pxRem(margin, 0 3);
+      text-transform: uppercase;
+      border: 1px solid map-get($color, border);
+      cursor: pointer;
+      &.selected {
+        color: map-get($color, "white");
+        border-color: map-get($color, secondary);
+        background-color: map-get($color, secondary);
+      }
+    }
+    .topping-list {
+      @include flex-center-y();
+      @include pxRem(margin, 15 0 30);
+    }
+    .topping-item {
+      @include pxRem(width, 80);
+      @include pxRem(padding, 8);
+      @include pxRem(border-radius, 10);
+      @include pxRem(margin-right, 10);
+      position: relative;
+      background-color: map-get($color, "gray");
+      border: 1px solid map-get($color, border);
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      .icon-checked {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(35%, -35%);
+      }
+    }
+  }
+  .btn-add-cart {
+    @include pxRem(padding, 12 8);
+    @include pxRem(border-radius, 10);
+    width: 100%;
+    color: map-get($color, "white");
+    background-color: map-get($color, primary);
+    font-weight: 600;
+  }
+}

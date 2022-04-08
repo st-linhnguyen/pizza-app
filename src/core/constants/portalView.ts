@@ -1,0 +1,6 @@
+const PORTAL_VIEW = {
+  'ADDRESS': 'ADDRESS',
+  'PAYMENT_RESULT': 'PAYMENT_RESULT',
+};
+
+export default PORTAL_VIEW;

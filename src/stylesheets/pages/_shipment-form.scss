@@ -1,0 +1,12 @@
+.form-shipment {
+  .card-wrapper {
+    @include pxRem(margin-bottom, 35);
+  }
+  .rccs__card {
+    @include pxRem(width, 300);
+    @include pxRem(height, 170);
+  }
+  .form-button {
+    @include pxRem(padding, 15 12 0);
+  }
+}

@@ -1,0 +1,18 @@
+.icon-checked {
+  @include flex-centered();
+  @include pxRem(width, 15);
+  @include pxRem(height, 15);
+  position: relative;
+  background-color: map-get($color, "green");
+  border-color: map-get($color, "green");
+  border-radius: 50%;
+  &::after {
+    @include pxRem(width, 8);
+    @include pxRem(height, 4);
+    content: "";
+    border: 2px solid map-get($color, "white");
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+  }
+}

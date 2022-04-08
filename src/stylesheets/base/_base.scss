@@ -1,0 +1,71 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  font-family: $font-body;
+}
+html, body {
+  font-size: 16px;
+  font-family: $font-body;
+  position: relative;
+  font-weight: 400;
+  color: map-get($color, secondary);
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  background: map-get($color, "white");
+  overscroll-behavior: contain;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  user-select: text; /* supported by Chrome and Opera */
+  -webkit-user-select: text; /* Safari */
+  -khtml-user-select: text; /* Konqueror HTML */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include pxRem(margin-bottom, 10);
+  font-weight: bold;
+  color: map-get($color, heading);
+}
+
+h1, .h1 {
+  @include pxRem(font-size, 56);
+  @include pxRem(line-height, 61.6);
+  @include respond-below(medium) {
+    @include pxRem(font-size, 20);
+    @include pxRem(line-height, 28);
+  }
+}
+h2, .h2 {
+  @include pxRem(font-size, 48);
+}
+h3, .h3 {
+  @include pxRem(font-size, 40);
+}
+h4, .h4 {
+  @include pxRem(font-size, 28);
+}
+h5, .h5 {
+  @include pxRem(font-size, 24);
+}
+h6, .h6 {
+  @include pxRem(font-size, 20);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}

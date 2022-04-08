@@ -1,0 +1,21 @@
+.btn {
+  @include flex-centered();
+  @include pxRem(padding, 12 8);
+  font-weight: 600;
+  outline: none;
+  &:focus {
+    box-shadow: none;
+  }
+  &.btn-icon {
+    @include pxRem(min-width, 20);
+    @include pxRem(min-height, 20);
+    border: 1px solid map-get($color, border);
+    line-height: 1;
+    padding: 0;
+  }
+  &.btn-primary {
+    color: map-get($color, "white");
+    background-color: map-get($color, primary);
+    border: 1px solid map-get($color, primary);
+  }
+}

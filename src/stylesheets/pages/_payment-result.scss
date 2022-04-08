@@ -1,0 +1,17 @@
+.payment-result {
+  .title {
+    @include pxRem(margin-bottom, 20);
+  }
+  .payload-content {
+    @include pxRem(max-height, 350);
+    @include pxRem(border-radius, 5);
+    @include pxRem(padding, 10);
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: map-get($color, "gray");
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
